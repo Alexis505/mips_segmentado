@@ -3,7 +3,7 @@ Esta carpeta contiene el diseno de un procesador segmentado que procesa un subco
   
 Instrucciones que procesa esta version  
   Instrucciones tipo R:    
-              add  
+&emsp;              add  
               sub  
               and  
               or  
