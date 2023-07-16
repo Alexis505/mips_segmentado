@@ -2,7 +2,7 @@
 Esta carpeta contiene el diseno de un procesador segmentado que procesa un subconjunto de instrucciones mips.  
   
 Instrucciones que procesa esta version  
-  Instrucciones tipo R  
+  Instrucciones tipo R:    
               add  
               sub  
               and  
