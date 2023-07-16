@@ -4,10 +4,11 @@ Esta carpeta contiene el diseno de un procesador segmentado que procesa un subco
 Instrucciones que procesa esta version  
   Instrucciones tipo R:    
 &emsp;              add  
-              sub  
-              and  
-              or  
-              slt (set on less than)  
+&emsp;              sub  
+&emsp;              and  
+&emsp;              or  
+&emsp;              slt (set on less than)  
+  
   Load word (LW)  
   Store word (SW)  
   Branch if equal (BEQ)  
