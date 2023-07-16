@@ -1,0 +1,199 @@
+xrun(64): 20.03-s017: (c) Copyright 1995-2021 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	20.03-s017: Started on Jun 21, 2023 at 18:36:44 CDT
+xrun
+	adder.v
+	alu.v
+	aludec.v
+	comparator.v
+	controller.v
+	datapath.v
+	dmem.v
+	ex_mem_regfile.v
+	flop.v
+	forwarding_unit.v
+	hazard_unit.v
+	id_ex_regfile.v
+	if_id_regfile.v
+	imem.v
+	maindec.v
+	mem_wb_regfie.v
+	mips.v
+	mux2.v
+	mux_3to1.v
+	pc_if_regfile.v
+	regfile.v
+	signext.v
+	sl2.v
+	testbench.v
+	top.v
+	-gui
+	-access +rwc
+file: adder.v
+	module worklib.adder:v
+		errors: 0, warnings: 0
+file: alu.v
+	module worklib.alu:v
+		errors: 0, warnings: 0
+file: aludec.v
+	module worklib.aludec:v
+		errors: 0, warnings: 0
+file: comparator.v
+	module worklib.comparator:v
+		errors: 0, warnings: 0
+file: controller.v
+	module worklib.controller:v
+		errors: 0, warnings: 0
+file: datapath.v
+	module worklib.datapath:v
+		errors: 0, warnings: 0
+file: dmem.v
+	module worklib.dmem:v
+		errors: 0, warnings: 0
+file: ex_mem_regfile.v
+	module worklib.ex_mem_regfile:v
+		errors: 0, warnings: 0
+file: flop.v
+	module worklib.flop:v
+		errors: 0, warnings: 0
+file: forwarding_unit.v
+	module worklib.forwarding_unit:v
+		errors: 0, warnings: 0
+file: hazard_unit.v
+	module worklib.hazard_unit:v
+		errors: 0, warnings: 0
+file: id_ex_regfile.v
+	module worklib.id_ex_regfile:v
+		errors: 0, warnings: 0
+file: if_id_regfile.v
+	module worklib.if_id_regfile:v
+		errors: 0, warnings: 0
+file: imem.v
+	module worklib.imem:v
+		errors: 0, warnings: 0
+file: maindec.v
+	module worklib.maindec:v
+		errors: 0, warnings: 0
+file: mem_wb_regfie.v
+	module worklib.mem_wb_regfile:v
+		errors: 0, warnings: 0
+file: mips.v
+	module worklib.mips:v
+		errors: 0, warnings: 0
+file: mux2.v
+	module worklib.mux2:v
+		errors: 0, warnings: 0
+file: mux_3to1.v
+	module worklib.mux_3to1:v
+		errors: 0, warnings: 0
+file: pc_if_regfile.v
+	module worklib.pc_if_regfile:v
+		errors: 0, warnings: 0
+file: regfile.v
+	module worklib.regfile:v
+		errors: 0, warnings: 0
+file: signext.v
+	module worklib.signext:v
+		errors: 0, warnings: 0
+file: sl2.v
+	module worklib.sl2:v
+		errors: 0, warnings: 0
+file: testbench.v
+	module worklib.testbench:v
+		errors: 0, warnings: 0
+file: top.v
+	module worklib.top:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		pc_if_regfile
+		testbench
+	Building instance overlay tables: ...................
+        $readmemh("memfile.dat",RAM);
+                                  |
+xmelab: *W,MEMODR (./imem.v,9|34): $readmem default memory order incompatible with IEEE1364.
+. Done
+	Generating native compiled code:
+		worklib.dmem:v <0x58457f92>
+			streams:   3, words:  1151
+		worklib.imem:v <0x344b885d>
+			streams:   2, words:   656
+		worklib.mem_wb_regfile:v <0x5c5bb177>
+			streams:   2, words:   860
+		worklib.ex_mem_regfile:v <0x1a009dbe>
+			streams:   2, words:  1000
+		worklib.forwarding_unit:v <0x66cb39bd>
+			streams:   6, words:  2193
+		worklib.alu:v <0x2514b619>
+			streams:   2, words:  1240
+		worklib.mux_3to1:v <0x2cdcb3df>
+			streams:   2, words:   732
+		worklib.mux2:v <0x3f487093>
+			streams:   1, words:   202
+		worklib.id_ex_regfile:v <0x0c2825e1>
+			streams:   3, words:  3945
+		worklib.hazard_unit:v <0x6229f8a2>
+			streams:   4, words:  1770
+		worklib.sl2:v <0x579a0dfc>
+			streams:   1, words:   117
+		worklib.comparator:v <0x29ef97d4>
+			streams:   1, words:   165
+		worklib.regfile:v <0x6f6c607c>
+			streams:   4, words:  1613
+		worklib.signext:v <0x3094f2dd>
+			streams:   1, words:   216
+		worklib.flop:v <0x2d92692a>
+			streams:   2, words:   500
+		worklib.mux2:v <0x15b07629>
+			streams:   1, words:   194
+		worklib.datapath:v <0x4aa7f63b>
+			streams:   3, words:   537
+		worklib.aludec:v <0x3a0c1891>
+			streams:   2, words:  1384
+		worklib.maindec:v <0x2dc1a0ee>
+			streams:   3, words:  2277
+		worklib.controller:v <0x3e3066cc>
+			streams:   0, words:     0
+		worklib.if_id_regfile:v <0x6245ffb3>
+			streams:   4, words:  1696
+		worklib.adder:v <0x78f98b33>
+			streams:   1, words:   136
+		worklib.mips:v <0x2d2054a7>
+			streams:   1, words:   158
+		worklib.top:v <0x54623204>
+			streams:   1, words:   125
+		worklib.testbench:v <0x2b943952>
+			streams:   7, words:  2909
+		worklib.pc_if_regfile:v <0x409b7e73>
+			streams:   2, words:   330
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		              Instances  Unique
+		Modules:             32      25
+		Registers:           43      42
+		Scalar wires:        29       -
+		Expanded wires:      32       1
+		Vectored wires:      44       -
+		Always blocks:       18      17
+		Initial blocks:       2       2
+		Cont. assignments:   21      16
+		Pseudo assignments:   4       4
+	Writing initial simulation snapshot: worklib.pc_if_regfile:v
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /usr/local/cadence/installs/XCELIUM2003/tools/xcelium/files/xmsimrc
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm testbench.tb_top.clk testbench.tb_top.data_addr testbench.tb_top.instr_F testbench.tb_top.mem_read testbench.tb_top.memwrite_M testbench.tb_top.pc testbench.tb_top.read_data testbench.tb_top.reset testbench.tb_top.write_data
+Created probe 1
+xcelium> run
+Simulation succeeded
+Simulation stopped via $stop(1) at time 205 NS + 1
+xcelium> ^C
+xcelium> exit
+...Regained control from SimVision
+-------------------------------------
+TOOL:	xrun(64)	20.03-s017: Exiting on Jun 21, 2023 at 18:40:53 CDT  (total: 00:04:09)
